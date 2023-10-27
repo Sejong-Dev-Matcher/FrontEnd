@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Dokdo&family=Gugi&family=Noto+Serif+KR:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody&family=Aoboshi+One&family=Dokdo&family=Gugi&family=Noto+Serif+KR:wght@200&display=swap');
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.pages_link{
+    margin-left:9rem;
+}
+.texts{
+    font-family:"Dokdo",serif;
+    font-size: 36px;
+    margin-right: 9rem;
+    cursor: pointer;
+}
+.texts:last-child{
+    margin-right: 0;
+}
+.texts:hover{
+    color:#B93234;
+}
+.info_box{
+    margin-left:4rem;
+    font-family: "Anybody",serif;
+    color:#696060;
+}
+.logout_btn {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.logout_btn:after{
+    display: block;
+    content: '';
+    border-bottom: solid 3px #B93234;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+.logout_btn:hover:after{
+    transform: scaleX(1);
+}
+.alarm_box{
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+}
+.number_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:4px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #D9D9D9;
+    color:black;
+    font-weight: bold;
+    font-size: 12px;
+}
