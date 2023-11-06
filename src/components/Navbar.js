@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../css/Nav_bar.module.css"
-const Nav_bar = () => {
+const Navbar = () => {
     return (
         <div className={styles.container}>
            <img src={process.env.PUBLIC_URL + 'images/SDM_logo.png'} alt='sdm_logo'></img>
@@ -28,4 +28,4 @@ const Nav_bar = () => {
     );
 };
 
-export default Nav_bar;
+export default Navbar;
