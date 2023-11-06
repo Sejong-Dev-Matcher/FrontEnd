@@ -18,7 +18,7 @@
     font-size: 2vw;
     cursor: pointer;
     white-space: nowrap;
-    margin-right: 3vw; /* Use viewport width for responsive spacing */
+    margin-right: 3vw; 
 }
 
 .texts:last-child {

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Dokdo&family=Gugi&family+Noto+Serif+KR:wght@200&display=swap');
+.Mypage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.my_resume{
+    font-family: "Dokdo",serif;
+    font-size:3vw;
+    transform: translate(45%,0);
+    margin-top:1vh;
+}
+.resume_box{
+    width: 80vw;
+    height: 80vh;
+    border : 1px solid black;
+    border-radius: 20px;
+}
