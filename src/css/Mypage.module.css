@@ -91,6 +91,7 @@
 }
 .selected_img {
   width: 10vw;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
     .stack_grid{

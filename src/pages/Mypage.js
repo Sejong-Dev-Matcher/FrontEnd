@@ -5,6 +5,10 @@ import Stacklist from "../components/Stack_list.js";
 const Mypage = () => {
   const [selectedImg, setSelectedImg] = useState([]);
   // console.log(selectedImg);
+  const handleStackDelete = (stack) => {
+    const nextStacks = selectedImg.filter(selectedImg_each => selectedImg_each !== stack)
+    setSelectedImg(nextStacks);
+  }
   return (
     <div className={styles.Mypage}>
       <Navbar />
@@ -23,7 +27,7 @@ const Mypage = () => {
             내 스택
             <div className={styles.stack_grid}>
               {selectedImg.map((stackimg) => (
-                <img src={stackimg.img} alt="" className={styles.selected_img} />
+                <img src={stackimg.img} alt="" className={styles.selected_img} onClick={() => {handleStackDelete(stackimg)}}/>
               ))}
             </div>
           </div>
@@ -35,7 +39,9 @@ const Mypage = () => {
             ></textarea>
           </div>
         </div>
-        <button className={styles.btn_save}>저장</button>
+        <button className={styles.btn_save} onClick={()=>{
+          alert("저장되었습니다!");
+        }}>저장</button>
       </div>
     </div>
   );
