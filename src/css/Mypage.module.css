@@ -69,5 +69,9 @@
 }
 .intro_texts{
     border-style: none;
-    resize:none;
+    width: 99%;
+    height: 95%;
+    max-height: 37vh;
+    resize: none;
+    overflow-y:scroll ;
 }
