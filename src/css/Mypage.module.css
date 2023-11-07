@@ -61,11 +61,13 @@
   color: #f8f8f8;
   border-radius: 20px;
   width: 73px;
+  height: 30px;
   border-style: none;
   cursor: pointer;
+  font-weight: bold;
 }
 .btn_save:active {
-  background-color: #2a875d;
+  background-color: #B93234;
   color: #f8f8f8;
   transform: scale(1.05);
 }
