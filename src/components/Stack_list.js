@@ -36,17 +36,18 @@ const stacks = [
 ];
 
 const StackList = (props) => {
+  const handleStackAdd = (stack) => {
+    if (!props.selectedImg.includes(stack)) {
+      props.setSelectedImg(props.selectedImg.concat(stack));
+    }
+  };
   return (
     <div className={styles.grid}>
       {stacks.map((stack, index) => (
         <button
           key={index}
           className={styles.gridItem}
-          onClick={()=>{
-            props.setSelectedImg(
-                props.selectedImg.concat(stack)
-            )
-          }}
+          onClick={() => {handleStackAdd(stack)}}
         >
           <img src={stack.img} alt={stack.name} />
         </button>
