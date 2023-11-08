@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Dokdo&family=Gugi&family+Noto+Serif+KR:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anybody&family=Aoboshi+One&family=Black+Han+Sans&family=Dokdo&family=Gugi&family=Noto+Serif+KR:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anybody&family=Aoboshi+One&family=Black+Han+Sans&family=Dokdo&family=Gugi&family=Noto+Serif+KR:wght@900&display=swap');
 
 .my_resume {
   position: absolute;
@@ -69,7 +68,7 @@
 .btn_save:active {
   background-color: #B93234;
   color: #f8f8f8;
-  transform: scale(1.05);
+  transform: scale(0.95);
 }
 .intro_texts {
   border-style: none;
@@ -93,6 +92,9 @@
   width: 10vw;
   cursor: pointer;
 }
+.selected_img:active{
+  transform: scale(0.95);
+}
 @media (max-width: 768px) {
     .stack_grid{
         display: grid;
@@ -107,4 +109,3 @@
         min-width: 80px;
     }
 }
-

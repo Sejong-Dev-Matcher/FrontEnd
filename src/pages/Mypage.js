@@ -24,7 +24,7 @@ const Mypage = () => {
             />
           </div>
           <div className={styles.my_stacks}>
-            내 스택
+            내 스택 ( 다시눌러 삭제할 수 있습니다. )
             <div className={styles.stack_grid}>
               {selectedImg.map((stackimg) => (
                 <img src={stackimg.img} alt="" className={styles.selected_img} onClick={() => {handleStackDelete(stackimg)}}/>

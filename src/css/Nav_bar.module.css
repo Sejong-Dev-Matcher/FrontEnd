@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Dokdo&family=Gugi&family+Noto+Serif+KR:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anybody&family=Aoboshi+One&family+Dokdo&family+Gugi&family+Noto+Serif+KR:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anybody&family=Aoboshi+One&family=Black+Han+Sans&family=Dokdo&family=Gugi&family=Noto+Serif+KR:wght@900&display=swap');
 .container {
     display: flex;
     flex-direction: row;
@@ -11,21 +9,25 @@
 
 .pages_link {
     margin-left: 4vw;
+    white-space: nowrap;
 }
-
-.texts {
+.pages_link text{
+    margin-right:2.5vw;
+}
+.links {
     font-family: "Dokdo", serif;
-    font-size: 2vw;
+    font-size: 2.5vw;
     cursor: pointer;
     white-space: nowrap;
-    margin-right: 3vw; /* Use viewport width for responsive spacing */
+    text-decoration: none; 
+    color:black;
 }
 
-.texts:last-child {
+.links:last-child {
     margin-right: 0;
 }
 
-.texts:hover {
+.links:hover {
     color: #B93234;
 }
 

@@ -1,8 +1,8 @@
-import Mypage from "./pages/Mypage";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <div>
-      <Mypage/>
+      <Navbar/>
     </div>
   );
 }

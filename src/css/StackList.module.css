@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 .gridItem:active{
-    transform: scale(1.1);
+    transform: scale(0.95);
 }
 .gridItem img {
   max-width: 100%;

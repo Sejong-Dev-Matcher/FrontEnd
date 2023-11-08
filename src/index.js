@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Mypage from './pages/Mypage';
+import MainPage from './pages/MainPage';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     path:"/mypage",
     element:<Mypage/>
   },
+  {
+    path:"/mainpage",
+    element:<MainPage/>
+  }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
