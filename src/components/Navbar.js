@@ -6,10 +6,10 @@ const Navbar = () => {
         <div className={styles.container}>
            <img src={process.env.PUBLIC_URL + 'images/SDM_logo.png'} alt='sdm_logo'></img>
            <div className={styles.pages_link}>
-                <text><Link to="/mainpage" className={styles.links}>홈</Link></text>
-                <text><Link to="/mypage" className={styles.links}>마이페이지</Link></text>
+                <text><Link to="/mainpage" className={styles.links}>홈</Link></text> 
                 <text><Link to="/" className={styles.links}>프로젝트 검색</Link></text>
                 <text><Link to="/" className={styles.links}>동료 찾기</Link></text>
+                <text><Link to="/mypage" className={styles.links}>마이페이지</Link></text>
            </div>
            <div className={styles.alarm_box}>
                 <img src={process.env.PUBLIC_URL + 'images/icon_bell_.png'} alt='bell'></img>
