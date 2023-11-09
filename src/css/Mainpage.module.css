@@ -42,6 +42,10 @@
     top: 55%;
   }
 }
+.more_proj,
+.more_dev{
+  height: 450px;
+}
 .more_proj p,
 .more_dev p {
   font-family: "Jeju Hallasan", cursive;

@@ -1,6 +1,14 @@
 import React from "react";
 import styles from "../css/Mainpage.module.css";
 import Navbar from "../components/Navbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import ProjectCard from "../components/ProjectCard";
+import DevCard from "../components/Dev_Card";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 const MainPage = () => {
   return (
     <div className={styles.container}>
@@ -25,10 +33,104 @@ const MainPage = () => {
           <div className={styles.more_proj}>
             <p>More Project</p>
             {/* 프로젝트 카드 컴포넌트 list 생성 */}
+            <Swiper
+              breakpoints={{
+                500: {
+                  slidesPerView: 3,
+                  spaceBetween: 400,
+                },
+                1000: {
+                  slidesPerView: 4,
+                  spaceBetween: 350,
+                },
+                1300: {
+                  slidesPerView: 5,
+                  spaceBetween: 300,
+                },
+              }}
+              slidesPerView={4}
+              slidesOffsetAfter={100}
+              slidesOffsetBefore={100}
+              spaceBetween={320}
+              grabCursor={true}
+              navigation
+              modules={[Pagination, Autoplay, Navigation]}
+              loop={true}
+              autoplay={{ delay: 2300 }}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                {" "}
+                {/*데이터가  아직  없어서 임의로 UI만 구성하게 해놓음 나중에 map함수를 통해 데이터 시각화 필요 */}
+                <ProjectCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectCard />
+              </SwiperSlide>
+            </Swiper>
           </div>
           <div className={styles.more_dev}>
             <p>More Fellows</p>
             {/* 개발자 카드 컴포넌트 list 생성 */}
+            <Swiper
+              breakpoints={{
+                500: {
+                  slidesPerView: 3,
+                  spaceBetween: 400,
+                },
+                1000: {
+                  slidesPerView: 4,
+                  spaceBetween: 350,
+                },
+                1300: {
+                  slidesPerView: 5,
+                  spaceBetween: 300,
+                },
+              }}
+              slidesPerView={4}
+              slidesOffsetAfter={100}
+              slidesOffsetBefore={100}
+              spaceBetween={320}
+              grabCursor={true}
+              navigation
+              modules={[Pagination, Autoplay, Navigation]}
+              loop={true}
+              autoplay={{ delay: 2900 }}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                {" "}
+                {/*데이터가  아직  없어서 임의로 UI만 구성하게 해놓음 나중에 map함수를 통해 데이터 시각화 필요 */}
+                <DevCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <DevCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <DevCard />
+              </SwiperSlide>
+              <SwiperSlide>
+                <DevCard/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <DevCard/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <DevCard/>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
