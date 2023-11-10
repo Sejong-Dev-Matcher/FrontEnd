@@ -1,38 +1,44 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Mypage from './pages/Mypage';
-import MainPage from './pages/MainPage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Mypage from "./pages/Mypage";
+import MainPage from "./pages/MainPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import FindProject from './pages/FindProject';
-import FindFellows from './pages/FindFellows';
+import FindProject from "./pages/FindProject";
+import FindFellows from "./pages/FindFellows";
+import { LoginSignup } from "./pages/LoginSignUp";
+
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<App/>
+    path: "/",
+    element: <App />,
   },
   {
-    path:"/mypage",
-    element:<Mypage/>
+    path: "/mypage",
+    element: <Mypage />,
   },
   {
-    path:"/mainpage",
-    element:<MainPage/>
+    path: "/mainpage",
+    element: <MainPage />,
   },
   {
-    path:"/projects",
-    element:<FindProject/>
+    path: "/projects",
+    element: <FindProject />,
   },
   {
-    path:"/fellows",
-    element:<FindFellows/>
-  }
-])
-const root = ReactDOM.createRoot(document.getElementById('root'));
+    path: "/fellows",
+    element: <FindFellows />,
+  },
+  {
+    path: "/login",
+    element: <LoginSignup />,
+  },
+]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-   <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
