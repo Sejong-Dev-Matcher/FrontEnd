@@ -11,9 +11,10 @@ import { LoginSignup } from "./pages/LoginSignUp";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-  },
+    path:"/test",
+    element:<App/>
+  }
+  ,
   {
     path: "/mypage",
     element: <Mypage />,
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
     element: <FindFellows />,
   },
   {
-    path: "/login",
+    path: "/",
     element: <LoginSignup />,
   },
 ]);
