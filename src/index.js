@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import Mypage from './pages/Mypage';
 import MainPage from './pages/MainPage';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import FindProject from './pages/FindProject';
+import FindFellows from './pages/FindFellows';
 const router = createBrowserRouter([
   {
     path:"/",
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
   {
     path:"/mainpage",
     element:<MainPage/>
+  },
+  {
+    path:"/projects",
+    element:<FindProject/>
+  },
+  {
+    path:"/fellows",
+    element:<FindFellows/>
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
