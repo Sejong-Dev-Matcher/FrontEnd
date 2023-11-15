@@ -122,13 +122,13 @@ const MainPage = () => {
                 <DevCard />
               </SwiperSlide>
               <SwiperSlide>
-                <DevCard/>
+                <DevCard />
               </SwiperSlide>
               <SwiperSlide>
-                <DevCard/>
+                <DevCard />
               </SwiperSlide>
               <SwiperSlide>
-                <DevCard/>
+                <DevCard />
               </SwiperSlide>
             </Swiper>
           </div>

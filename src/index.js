@@ -7,7 +7,6 @@ import MainPage from "./pages/MainPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FindProject from "./pages/FindProject";
 import FindFellows from "./pages/FindFellows";
-import { LoginSignup } from "./pages/LoginSignUp";
 
 const router = createBrowserRouter([
   {
@@ -29,10 +28,6 @@ const router = createBrowserRouter([
   {
     path: "/fellows",
     element: <FindFellows />,
-  },
-  {
-    path: "/login",
-    element: <LoginSignup />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
