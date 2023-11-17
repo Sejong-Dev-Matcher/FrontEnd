@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/LoginSignUp.css";
-
+import Footer from "../components/Footer";
 const LoginSignup = () => {
   const [action, setAction] = useState("Login");
 
@@ -57,6 +57,7 @@ const LoginSignup = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

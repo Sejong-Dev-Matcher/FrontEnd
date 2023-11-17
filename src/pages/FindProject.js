@@ -37,7 +37,7 @@ const FindProject = () => {
       <Navbar />
       <Banner />
       <div className={styles.space}></div>
-      <SearchBar />
+      <SearchBar searchbar="프로젝트 이름으로 검색"/>
       <div className={styles.space}></div>
 
       <div className={styles.projectGrid}>

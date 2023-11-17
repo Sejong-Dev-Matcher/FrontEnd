@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import ProjectCard from "../components/ProjectCard";
 import DevCard from "../components/Dev_Card";
-
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -26,7 +26,7 @@ const MainPage = () => {
             <p>당신의 프로젝트를 찾고 만들어보세요!</p>
           </div>
           <div className={styles.proj_find}>
-            <p>프로젝트 찾으러가기</p>
+            <p><Link to="/projects" className={styles.proj_link}>프로젝트 찾으러가기</Link></p>
           </div>
         </div>
         <div className={styles.show_cards}>

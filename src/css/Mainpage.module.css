@@ -51,3 +51,7 @@
   font-family: "Jeju Hallasan", cursive;
   font-size: 20px;
 }
+.proj_link{
+  text-decoration: none;
+  color:white;
+}

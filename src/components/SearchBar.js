@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../css/SearchBar.module.css";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = () => {
@@ -14,7 +14,7 @@ const SearchBar = () => {
       <input
         className={styles.searchInput}
         type="text"
-        placeholder="프로젝트 이름으로 검색"
+        placeholder={props.searchbar}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
