@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/LoginSignUp.css";
 
-export const LoginSignup = () => {
+const LoginSignup = () => {
   const [action, setAction] = useState("Login");
 
   return (
@@ -60,3 +60,4 @@ export const LoginSignup = () => {
     </div>
   );
 };
+export default LoginSignup;

@@ -7,7 +7,8 @@ import MainPage from "./pages/MainPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FindProject from "./pages/FindProject";
 import FindFellows from "./pages/FindFellows";
-
+import LoginSignup from "./pages/LoginSignUp.jsx"
+import MakeProject from "./pages/MakeProject";
 const router = createBrowserRouter([
   {
     path: "/test",
@@ -26,11 +27,15 @@ const router = createBrowserRouter([
     element: <FindProject />,
   },
   {
+    path: "/projects/make-project",
+    element:<MakeProject/>
+  },
+  {
     path: "/fellows",
     element: <FindFellows />,
   },
   {
-    path: "/login",
+    path: "/",
     element: <LoginSignup />,
   },
 ]);
