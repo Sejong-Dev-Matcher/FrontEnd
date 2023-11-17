@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../css/Banner.module.css";
-
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className={styles.container}>
@@ -16,7 +16,7 @@ const Banner = () => {
           <p>당신의 프로젝트를 찾고 만들어보세요!</p>
         </div>
         <div className={styles.proj_find}>
-          <p>프로젝트 찾으러가기</p>
+          <p ><Link to="/projects/make-project" className={styles.proj_link}>프로젝트 만들러가기</Link></p>
         </div>
       </div>
     </div>

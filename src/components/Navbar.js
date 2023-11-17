@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <Link to="/mainpage">
         <img
-          src={process.env.PUBLIC_URL + "images/SDM_logo.png"}
+          src={process.env.PUBLIC_URL + "/images/SDM_logo.png"}
           alt="sdm_logo"
         ></img>
       </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
       <div className={styles.alarm_box}>
         <img
-          src={process.env.PUBLIC_URL + "images/icon_bell_.png"}
+          src={process.env.PUBLIC_URL + "/images/icon_bell_.png"}
           alt="bell"
         ></img>
         <div className={styles.number_box}>0</div> {/* 실제론 0대신 알람개수*/}
