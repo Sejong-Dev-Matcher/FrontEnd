@@ -1,0 +1,51 @@
+.proj_image {
+  width: 100vw;
+  height: 30vh;
+  transform: translate(-8px, 0);
+}
+.proj_text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Jeju Hallasan", cursive;
+  font-size: 3vw;
+  color: rgb(232, 229, 229);
+}
+.proj_find {
+  position: absolute;
+  top: 45%;
+  right: 50%;
+  transform: translate(40%, -50%);
+  font-family: "Jeju Hallasan", cursive;
+  font-size: 20px;
+  color: rgb(232, 229, 229);
+  cursor: pointer;
+}
+.proj_find:after {
+  display: block;
+  content: "";
+  border-bottom: dashed 3px rgb(232, 229, 229);
+  transform: scaleX(0);
+  transition: transform 400ms ease-in-out;
+}
+.proj_find:hover::after {
+  transform: scaleX(1);
+}
+.proj_find p {
+  margin-bottom: 1px;
+}
+@media (max-width: 768px) {
+  .proj_text {
+    top: 55%;
+  }
+}
+.more_proj,
+.more_dev {
+  height: 450px;
+}
+.more_proj p,
+.more_dev p {
+  font-family: "Jeju Hallasan", cursive;
+  font-size: 20px;
+}

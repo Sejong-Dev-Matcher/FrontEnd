@@ -7,14 +7,12 @@ import MainPage from "./pages/MainPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FindProject from "./pages/FindProject";
 import FindFellows from "./pages/FindFellows";
-import { LoginSignup } from "./pages/LoginSignUp";
 
 const router = createBrowserRouter([
   {
-    path:"/test",
-    element:<App/>
-  }
-  ,
+    path: "/test",
+    element: <App />,
+  },
   {
     path: "/mypage",
     element: <Mypage />,
@@ -32,7 +30,7 @@ const router = createBrowserRouter([
     element: <FindFellows />,
   },
   {
-    path: "/",
+    path: "/login",
     element: <LoginSignup />,
   },
 ]);

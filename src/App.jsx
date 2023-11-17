@@ -3,7 +3,7 @@ import DevCard from "./components/Dev_Card";
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
     </div>
   );
 }
