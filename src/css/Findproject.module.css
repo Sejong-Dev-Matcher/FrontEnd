@@ -1,0 +1,32 @@
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 150px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.pagination button.activePage {
+  background-color: #b93234;
+  color: #fff;
+}
+
+.space {
+  height: 20px; /* 원하는 간격의 높이 설정 */
+}
