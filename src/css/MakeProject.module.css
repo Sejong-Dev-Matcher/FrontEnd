@@ -1,0 +1,117 @@
+.main_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Black Han Sans", serif;
+  margin-top: 20px;
+}
+.project_register_btn {
+  width: 2vw;
+  min-width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #41b883;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 15px;
+  font-family: "Jeju Gothic", sans-serif;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.project_register_btn:active{
+  transform: scale(0.9);
+}
+.proj_texts {
+  font-size: 2vw;
+}
+.making_project {
+  margin-bottom: 40px;
+  font-size: 3.5vw;
+}
+.project_name {
+  display: flex;
+  align-items: center;
+}
+.project_name_input {
+  width: 25vw;
+  height: 30px;
+  min-width: 150px;
+  border: 1px solid #c6c4c4;
+  border-radius: 25px;
+  margin-left: 40px;
+}
+.project_people_num {
+  transform: translateX(-28%);
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.stack_select_bar {
+  width: 10vw;
+  min-width: 100px;
+  height: 30px;
+  border: 1px solid #c6c4c4;
+  border-radius: 25px;
+  margin-left: 40px;
+}
+.project_stacklist {
+  transform: translateX(-33%);
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.project_intro {
+  display: flex;
+  white-space: nowrap;
+  margin-top: 4vh;
+  transform: translateX(-2%);
+}
+.proj_intro_texts {
+  border: 1px solid #c6c4c4;
+  border-radius: 10px;
+  width: 25vw;
+  height: 20vh;
+  max-height: 37vh;
+  resize: none;
+  overflow-y: scroll;
+  margin-left: 40px;
+}
+.selected_bar {
+  width: 50vw;
+  min-width: 100px;
+  height: 100px;
+  border: 1px solid #c6c4c4;
+  border-radius: 25px;
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap:10px;
+  padding:10px;
+}
+.project_stacklist_seletecd{
+  display: flex;
+  flex-direction: row;
+  margin-top:10px;
+}
+.stacks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.init_btn{
+  margin-top:1vw;
+  border-radius: 20px;
+  width: 7vw;
+  height: 2vw;
+  border:none;
+  background-color: #B93234;
+  color:whitesmoke;
+  font-weight: bold;
+  cursor: pointer;
+}
+.init_btn:active{
+  transform: scale(0.9);
+}

@@ -9,7 +9,7 @@ const DevCard = () => {
                 <div>개발자 장*문</div> {/*실제 이름 데이터 받기 */}
             </div>
             <div className={styles.info_field}>
-                <div>이름 (분야)</div>{/*실제 프로젝트명 받기 */}
+                <div>이름</div>
                 <div className={styles.info_field_partificiant}>
                     <div className={styles.iconWrapper}>
                         <img src={process.env.PUBLIC_URL + "/images/icon_person_.png"} alt='icon'/>

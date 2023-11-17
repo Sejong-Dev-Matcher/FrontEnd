@@ -1,9 +1,8 @@
-import Navbar from "./components/Navbar";
-import DevCard from "./components/Dev_Card";
+import MakeProject from "./pages/MakeProject";
 function App() {
   return (
     <div>
-      <Navbar/>
+      <MakeProject/>
     </div>
   );
 }
