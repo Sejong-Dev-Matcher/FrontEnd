@@ -1,9 +1,9 @@
-import MakeProject from "./pages/MakeProject";
+import FindFellows from "./pages/FindFellows";
 function App() {
   return (
     <div>
       
-
+      <FindFellows/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <p>&copy; 2023 SDM Website. All rights reserved.</p>
-        <p>Designed by Jeremy & BumSoo </p>
+        <p>Designed by Jeremy & BeomSu </p>
         <p>BackEnd by 수민, 승억, 태헌 </p>
       </div>
     </footer>
