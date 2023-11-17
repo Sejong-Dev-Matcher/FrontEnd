@@ -10,7 +10,7 @@ import FindFellows from "./pages/FindFellows";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/test",
     element: <App />,
   },
   {
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/fellows",
     element: <FindFellows />,
+  },
+  {
+    path: "/login",
+    element: <LoginSignup />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

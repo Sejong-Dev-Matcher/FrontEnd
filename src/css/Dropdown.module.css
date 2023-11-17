@@ -1,0 +1,11 @@
+/* Dropdown.module.css */
+
+.dropdown {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+}

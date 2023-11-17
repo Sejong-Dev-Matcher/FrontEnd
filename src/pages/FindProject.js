@@ -4,6 +4,7 @@ import styles from "../css/Findproject.module.css";
 import ProjectCard from "../components/ProjectCard";
 import Banner from "../components/Banner";
 import SearchBar from "../components/SearchBar";
+import Footer from "../components/Footer";
 
 const FindProject = () => {
   const itemsPerPage = 10; // 페이지 당 보여줄 프로젝트 수
@@ -56,6 +57,10 @@ const FindProject = () => {
           </button>
         ))}
       </div>
+      <div className={styles.space}></div>
+      <div className={styles.space}></div>
+      <div className={styles.space}></div>
+      <Footer></Footer>
     </div>
   );
 };
