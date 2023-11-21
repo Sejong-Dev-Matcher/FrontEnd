@@ -1,11 +1,6 @@
-import FindFellows from "./pages/FindFellows";
 function App() {
-  return (
-    <div>
-      
-      <FindFellows/>
-    </div>
-  );
+  return <div>
+  </div>;
 }
 
 export default App;
