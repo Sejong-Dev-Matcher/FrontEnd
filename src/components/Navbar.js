@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../css/Nav_bar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+const links = [
+  { to: "/home", text: "홈" },
+  { to: "/projects", text: "프로젝트 검색" },
+  { to: "/fellows", text: "동료 찾기" },
+  { to: "/mypage", text: "마이페이지" },
+];
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState(null);
+  const location = useLocation();
+  const handleLinkClick = (index) => {
+    setActiveLink(index);
+  };
+  const isActiveLink = (index) => index === activeLink || location.pathname === links[index].to;
   return (
     <div className={styles.container}>
       <Link to="/mainpage">
@@ -11,26 +23,17 @@ const Navbar = () => {
         ></img>
       </Link>
       <div className={styles.pages_link}>
-        <text>
-          <Link to="/mainpage" className={styles.links}>
-            홈
-          </Link>
-        </text>
-        <text>
-          <Link to="/projects" className={styles.links}>
-            프로젝트 검색
-          </Link>
-        </text>
-        <text>
-          <Link to="/fellows" className={styles.links}>
-            동료 찾기
-          </Link>
-        </text>
-        <text>
-          <Link to="/mypage" className={styles.links}>
-            마이페이지
-          </Link>
-        </text>
+        {links.map((link, index) => (
+          <text key={index}>
+            <Link
+              to={link.to}
+              className={`${styles.links} ${isActiveLink(index) ? styles.active : ""}`}
+              onClick={() => handleLinkClick(index)}
+            >
+              {link.text}
+            </Link>
+          </text>
+        ))}
       </div>
       <div className={styles.alarm_box}>
         <img

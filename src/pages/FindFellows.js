@@ -41,7 +41,7 @@ const FindFellows = () => {
 
       <div className={styles.projectGrid}>
         {projectsToShow.map((user) => (
-          <DevCard key={user.id} user={user} />
+          <DevCard key={user.id} user={user} className={styles.devcard}/>
         ))}
       </div>
 

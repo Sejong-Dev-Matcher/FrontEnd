@@ -23,6 +23,7 @@
   color: black;
 }
 
+
 .links:last-child {
   margin-right: 0;
 }
@@ -103,4 +104,7 @@
   .alarm_box {
     margin: 2rem 0;
   }
+}
+.active{
+  color:#b93234;
 }
