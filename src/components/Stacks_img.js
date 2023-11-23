@@ -1,34 +1,35 @@
 const stacks = [
     {
         name : "React",
-        img : 'process.env.PUBLIC_URL + images/React.png'
+        img : process.env.PUBLIC_URL + 'images/React.png'
     },
     {
         name : "Java",
-        img : 'process.env.PUBLIC_URL + images/Java.png'
+        img : process.env.PUBLIC_URL + 'images/Java.png'
     },
     {
         name : "Kotlint",
-        img : 'process.env.PUBLIC_URL + images/Kotlin.png'
+        img : process.env.PUBLIC_URL + 'images/Kotlin.png'
     },
     {
         name : "Mysql",
-        img : 'process.env.PUBLIC_URL + images/Mysql.png'
+        img : process.env.PUBLIC_URL + 'images/Mysql.png'
     },
     {
         name : "Python",
-        img : 'process.env.PUBLIC_URL + images/Python.png'
+        img : process.env.PUBLIC_URL + 'images/Python.png'
     },
     {
         name : "Spring",
-        img : 'process.env.PUBLIC_URL + images/Spring.png'
+        img : process.env.PUBLIC_URL + 'images/Spring.png'
     },
     {
         name : "Swift",
-        img : 'process.env.PUBLIC_URL + images/Swift.png'
+        img : process.env.PUBLIC_URL + 'images/Swift.png'
     },
     {
         name : "Vue",
-        img : 'process.env.PUBLIC_URL + images/Vue.png'
+        img : process.env.PUBLIC_URL + 'images/Vue.png'
     },
 ]
+export default stacks;
