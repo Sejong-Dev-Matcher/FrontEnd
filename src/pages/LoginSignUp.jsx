@@ -12,14 +12,6 @@ const LoginSignup = () => {
           <div className="underline"></div>
         </div>
         <div className="inputs">
-          {action === "Login" ? (
-            <div></div>
-          ) : (
-            <div className="input">
-              <img src={process.env.PUBLIC_URL + "/imgaes/email.png"} alt="" />
-              <input type="email" placeholder="Email Id" />
-            </div>
-          )}
           <div className="input">
             <img src={process.env.PUBLIC_URL + "/images/person.png"} alt="" />
             <input type="text" placeholder="Student Id" />
