@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../css/SearchBar.module.css";
-
+import DropDown from "../components/Dropdown";
 const SearchBar = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
 

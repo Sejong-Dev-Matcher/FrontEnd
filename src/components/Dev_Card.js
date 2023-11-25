@@ -83,7 +83,7 @@ const DevCard = () => {
               top: "10px",
               right: "10px",
               color: "#B93234",
-              fontWeight: "bold"
+              fontWeight: "bold",
             }}
           >
             X
@@ -95,18 +95,92 @@ const DevCard = () => {
               </div>
               <div className={styles.m_stacks_stackimg}>
                 {stacks.map((stack) => (
-                  <img src={stack.img} alt={stack.name}/>
+                  <img src={stack.img} alt={stack.name} />
                 ))}
               </div>
             </div>
             <div className={styles.m_intro}>
-              <div className={styles.m_intro_1}>
-                  자기소개서
-              </div>
+              <div className={styles.m_intro_1}>자기소개서</div>
               <div className={styles.m_intro_2}>
                 {/*회원별 자기소개 데이터 파싱 */}
-                <textarea className={styles.m_intro_textarea} readOnly>{/* 소개글 파싱 */} 
-                  sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro sample intro  
+                <textarea className={styles.m_intro_textarea} readOnly>
+                  {/* 소개글 파싱 */}
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
+                  sample intro sample intro sample intro sample intro sample
+                  intro sample intro sample intro sample intro sample intro
                 </textarea>
               </div>
             </div>

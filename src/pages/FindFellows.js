@@ -5,8 +5,9 @@ import DevCard from "../components/Dev_Card";
 import Banner from "../components/Banner";
 import SearchBar from "../components/SearchBar";
 import Footer from "../components/Footer";
+import Dropdown from "../components/Dropdown";
 const FindFellows = () => {
-    const itemsPerPage = 10; // 페이지 당 보여줄 프로젝트 수
+  const itemsPerPage = 10; // 페이지 당 보여줄 프로젝트 수
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1); // 전체 페이지 수
 
@@ -36,15 +37,15 @@ const FindFellows = () => {
       <Navbar />
       <Banner />
       <div className={styles.space}></div>
-      <SearchBar searchbar="개발자 이름으로 검색"/> {/*뭔가 좀 이상하긴함;;- 기획의도와 맞나? */}
+      <SearchBar searchbar="개발자 이름으로 검색" />{" "}
+      {/*뭔가 좀 이상하긴함;;- 기획의도와 맞나? */}
+      <Dropdown></Dropdown>
       <div className={styles.space}></div>
-
       <div className={styles.projectGrid}>
         {projectsToShow.map((user) => (
-          <DevCard key={user.id} user={user} className={styles.devcard}/>
+          <DevCard key={user.id} user={user} className={styles.devcard} />
         ))}
       </div>
-
       <div className={styles.pagination}>
         {Array.from({ length: totalPages }, (_, index) => (
           <button

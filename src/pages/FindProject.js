@@ -5,6 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import Banner from "../components/Banner";
 import SearchBar from "../components/SearchBar";
 import Footer from "../components/Footer";
+import Dropdown from "../components/Dropdown";
 
 const FindProject = () => {
   const itemsPerPage = 10; // 페이지 당 보여줄 프로젝트 수
@@ -37,7 +38,13 @@ const FindProject = () => {
       <Navbar />
       <Banner />
       <div className={styles.space}></div>
-      <SearchBar searchbar="프로젝트 이름으로 검색"/>
+
+      <SearchBar
+        searchbar="프로젝트 이름으로 검색"
+        className={styles.searchbar}
+      />
+      <Dropdown className={styles.dropdown} />
+
       <div className={styles.space}></div>
 
       <div className={styles.projectGrid}>

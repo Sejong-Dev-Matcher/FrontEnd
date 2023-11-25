@@ -49,7 +49,6 @@ const LoginSignup = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
