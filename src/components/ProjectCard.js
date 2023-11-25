@@ -105,7 +105,7 @@ const ProjectCard = () => {
             <div className={styles.m_intro}>
               <div className={styles.m_intro_1}>프로젝트 소개</div>
               <div className={styles.m_intro_2}>
-                {/*회원별 자기소개 데이터 파싱 */}
+                {/*프로젝트별 소개 데이터 파싱 */}
                 <textarea className={styles.m_intro_textarea} readOnly>
                   {/* 소개글 파싱 */}
                   project introduce project introduce project introduce project
