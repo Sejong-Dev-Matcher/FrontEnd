@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../css/Nav_bar.module.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 const links = [
   { to: "/home", text: "홈" },
   { to: "/projects", text: "프로젝트 검색" },
@@ -14,9 +14,10 @@ const Navbar = () => {
     setActiveLink(index);
   };
   const isActiveLink = (index) => index === activeLink || location.pathname === links[index].to;
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
-      <Link to="/mainpage">
+      <Link to="/home">
         <img
           src={process.env.PUBLIC_URL + "/images/SDM_logo.png"}
           alt="sdm_logo"
@@ -48,7 +49,7 @@ const Navbar = () => {
           {/* 실제론 stdent ID + name*/}
           student ID Name
         </div>
-        <div className={styles.logout_btn}>Logout</div>
+        <div className={styles.logout_btn} onClick={()=>navigate("/")}>Logout</div>
       </div>
     </div>
   );
