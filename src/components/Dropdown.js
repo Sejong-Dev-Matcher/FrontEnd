@@ -44,7 +44,7 @@ const MakeProject = () => {
               value={"select"}
               onChange={handleSelect}
             >
-              <option defaultValue="">원하는 스택만 고르세요!</option>
+              <option defaultValue="" >스택 선택</option>
               {stack_list.map((stack) => (
                 <option value={stack.value} key={stack.value}>
                   {stack.name}
