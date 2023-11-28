@@ -7,8 +7,14 @@ import MainPage from "./pages/MainPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FindProject from "./pages/FindProject";
 import FindFellows from "./pages/FindFellows";
-import LoginSignup from "./pages/LoginSignUp.jsx";
+import Login from "./pages/Login";
 import MakeProject from "./pages/MakeProject";
+import { Provider } from "react-redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { applyMiddleware, createStore } from "redux";
+import rootReducer, { rootSaga } from "./modules";
+import Signup from "./pages/Signup";
+import createSagaMiddleware from "redux-saga";
 const router = createBrowserRouter([
   {
     path: "/test",
@@ -36,13 +42,22 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <LoginSignup />,
+    element: <Login />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
   },
 ]);
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(rootReducer,composeWithDevTools(applyMiddleware(sagaMiddleware)));
+sagaMiddleware.run(rootSaga);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 
