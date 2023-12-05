@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "../components/Navbar.js";
 import styles from "../css/Mypage.module.css";
@@ -7,9 +6,11 @@ const Mypage = () => {
   const [selectedImg, setSelectedImg] = useState([]);
   // console.log(selectedImg);
   const handleStackDelete = (stack) => {
-    const nextStacks = selectedImg.filter(selectedImg_each => selectedImg_each !== stack)
+    const nextStacks = selectedImg.filter(
+      (selectedImg_each) => selectedImg_each !== stack
+    );
     setSelectedImg(nextStacks);
-  }
+  };
   return (
     <div className={styles.Mypage}>
       <Navbar />
@@ -28,7 +29,14 @@ const Mypage = () => {
             내 스택 ( 다시눌러 삭제할 수 있습니다. )
             <div className={styles.stack_grid}>
               {selectedImg.map((stackimg) => (
-                <img src={stackimg.img} alt="" className={styles.selected_img} onClick={() => {handleStackDelete(stackimg)}}/>
+                <img
+                  src={stackimg.img}
+                  alt=""
+                  className={styles.selected_img}
+                  onClick={() => {
+                    handleStackDelete(stackimg);
+                  }}
+                />
               ))}
             </div>
           </div>
@@ -40,9 +48,14 @@ const Mypage = () => {
             ></textarea>
           </div>
         </div>
-        <button className={styles.btn_save} onClick={()=>{
-          alert("저장되었습니다!");
-        }}>저장</button>
+        <button
+          className={styles.btn_save}
+          onClick={() => {
+            alert("저장되었습니다!");
+          }}
+        >
+          저장
+        </button>
       </div>
     </div>
   );
