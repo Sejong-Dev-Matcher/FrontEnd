@@ -50,6 +50,7 @@ const MakeProject = () => {
     // 실제 서버의 API 엔드포인트와 요청 형식에 맞게 수정해야 합니다.
     const apiUrl = "http://3.39.21.137:8080/projectboard/post";
     const projectData = {
+      studentId: 3,
       title: projectName,
       content: intro,
       maxpeople: selectedMem,
