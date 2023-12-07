@@ -9,8 +9,8 @@ import * as authAPI from '../lib/api/auth';
 const CHANGE_FIELD = 'auth/CHANGE_FIELD';
 const INITIALIZE_FORM = 'auth/INITIALIZE_FORM';
 
-const [REGISTER, REGISTER_SUCCESS, REGISTER_FAILURE] = createRequestActionTypes(
-  'auth/REGISTER'
+const [REGISTER, SIGNUP_SUCCESS, SIGNUP_FAILURE] = createRequestActionTypes(
+  'auth/SIGNUP'
 );
 
 const [LOGIN, LOGIN_SUCCESS, LOGIN_FAILURE] = createRequestActionTypes(
@@ -69,21 +69,21 @@ const auth = handleActions(
       authError: null // 폼 전환 시 회원 인증 에러 초기화
     }),
     // 회원가입 성공
-    [REGISTER_SUCCESS]: (state, { payload: auth }) => ({
+    [SIGNUP_SUCCESS]: (state, { payload: auth }) => ({
       ...state,
       authError: null,
-      auth
+      auth : true
     }),
     // 회원가입 실패
-    [REGISTER_FAILURE]: (state, { payload: error }) => ({
+    [SIGNUP_FAILURE]: (state, { payload: error }) => ({
       ...state,
-      authError: error
+      authError: error,
     }),
     // 로그인 성공
     [LOGIN_SUCCESS]: (state, { payload: auth }) => ({
       ...state,
       authError: null,
-      auth
+      auth : true
     }),
     // 로그인 실패
     [LOGIN_FAILURE]: (state, { payload: error }) => ({
