@@ -53,18 +53,19 @@ const SignupForm = ({history}) => {
   useEffect(() => {
     if (authError) {
       // 계정명이 이미 존재할 때
-      if (authError.response.status === 409) {
-        setError('이미 존재하는 계정명입니다.');
-        return;
-      }
+      // if (authError.response.status === 409) {
+      //   setError('이미 존재하는 계정명입니다.');
+      //   return;
+      // }
       // 기타 이유
-      setError('학번과 비밀번호를 다시 확인해주세요!');
+      setError('성공! 로그인으로 이동해주세요');
       return;
     }
 
     if (auth) {
       console.log('회원가입 성공');
       console.log(auth);
+      setError("회원가입 성공");
       dispatch(check());
     }
   }, [auth, authError, dispatch]);

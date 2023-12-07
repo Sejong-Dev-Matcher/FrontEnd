@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className={styles.student_info}>
           {" "}
           {/* 실제론 stdent ID + name*/}
-          student ID Name
+          19011491 김범수
         </div>
         <div className={styles.logout_btn} onClick={()=>navigate("/")}>Logout</div>
       </div>
